@@ -13,3 +13,12 @@ This will clone the [gchan-backend](https://github.com/gchan-board/gchan-backend
 You can then access the API via <http://localhost:4450>, and the documentation at <http://localhost:4450/api-docs>.
 
 Please check the .docker directory for more information.
+
+## Running Flutter
+
+To start Flutter in debug mode be sure to have an Android or iOS device
+available and then simply run:
+
+```sh
+flutter run
+```
