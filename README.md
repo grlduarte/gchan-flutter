@@ -22,3 +22,13 @@ available and then simply run:
 ```sh
 flutter run
 ```
+
+## Update auto generated files
+
+This app uses auto generated code to handle json serialization. If you happen to modify any model file, run: 
+
+```sh
+flutter pub run build_runner build
+```
+
+For more on this, see [json_serializable](https://pub.dev/packages/json_serializable).
