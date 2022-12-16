@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
+import 'features/messages/views/messages_list_view.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
                   default:
-                    return Scaffold(appBar: AppBar());
+                    return const MessagesView();
                 }
               },
             );
