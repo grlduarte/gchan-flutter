@@ -53,4 +53,6 @@ class MessagesService {
 
     throw Exception(response.statusCode);
   }
+
+  //static Future<List<Reply>> getMessageReplies(int messageId) {}
 }

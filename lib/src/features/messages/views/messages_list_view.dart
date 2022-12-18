@@ -4,6 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../models/message.dart';
 import '../messages_service.dart';
 
+import 'message_detail_view.dart';
 import '../widgets/message_card.dart';
 
 class MessagesView extends StatelessWidget {
@@ -116,7 +117,20 @@ class _MessagesListState extends State<_MessagesList> {
           return const LoadingTile();
         }
 
-        return MessageCard(messages[index]);
+        Message message = messages[index];
+
+        return InkWell(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              fullscreenDialog: true,
+              builder: (_) => MessageDetailView(
+                messageId: message.id!,
+                messageData: message,
+              ),
+            ),
+          ),
+          child: MessageCard(message),
+        );
       },
     );
   }
