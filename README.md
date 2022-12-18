@@ -16,6 +16,15 @@ Please check the .docker directory for more information.
 
 ## Running Flutter
 
+Before you run the app for the first time it's important to set the infos on
+how to connect to the API server. Copy the example file using 
+
+```sh
+cp lib/server_config.example.dart lib/server_config.dart
+```
+
+then edit the constants in the newly created file to mimic your setup.
+
 To start Flutter in debug mode be sure to have an Android or iOS device
 available and then simply run:
 
