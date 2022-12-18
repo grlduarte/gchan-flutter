@@ -1,3 +1,6 @@
+# API server config
+lib/server_config.dart
+
 # Miscellaneous
 *.class
 *.log
