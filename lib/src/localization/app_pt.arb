@@ -3,5 +3,11 @@
 
   "tryAgain": "Tentar novamente",
   "by": "por",
-  "messages": "mensagens"
+  "message": "mensagem",
+  "messages": "mensagens",
+  "name": "nome",
+  "subject": "assunto",
+  "anonymous": "anônimo",
+  "emptyContentValidationMessage": "preenche alguma baboseira aí",
+  "post": "Postar"
 }

@@ -5,6 +5,7 @@ import '../models/message.dart';
 import '../messages_service.dart';
 
 import '../widgets/message_card.dart';
+import '../views/new_message_view.dart';
 
 class MessagesView extends StatelessWidget {
   const MessagesView({super.key});
@@ -14,6 +15,12 @@ class MessagesView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.appTitle),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.post_add),
+            onPressed: () => navigateToNewMessageView(context),
+          ),
+        ],
       ),
       body: const _MessagesList(),
     );

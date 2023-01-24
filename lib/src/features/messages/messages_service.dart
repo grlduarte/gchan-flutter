@@ -53,4 +53,8 @@ class MessagesService {
 
     throw Exception(response.statusCode);
   }
+
+  static Future<void> postNewMessage(Message message) {
+    return Future.sync(() {});
+  }
 }
